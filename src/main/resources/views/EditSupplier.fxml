@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafx_project.controllers.EditSupplierController">
+    <Label text="Edit Owner" />
+
+    <TextField fx:id="nameField" promptText="Name" />
+    <TextField fx:id="cinField" promptText="CIN" />
+    <TextField fx:id="addressField" promptText="Address" />
+    <TextField fx:id="phoneNumberField" promptText="Phone Number" />
+    <Button text="Update" onAction="#saveChanges" />
+</VBox>

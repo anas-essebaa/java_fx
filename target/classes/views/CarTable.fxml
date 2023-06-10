@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.javafx_project.controllers.CarController">
+    <TableView fx:id="carTableView">
+        <columns>
+            <TableColumn text="ID" prefWidth="50">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Brand" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="brand"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Model" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="model"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Registration Number" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="registrationNumber"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Registration Date" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="registrationDate"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Color" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="color"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Fuel Type" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fuelType"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Owner" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="owner"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</AnchorPane>

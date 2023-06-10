@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_project.controllers.SupplierController">
+
+        <TableView fx:id="SupplierTableView" prefHeight="400.0" prefWidth="502.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="nameColumn" text="Name" />
+                <TableColumn fx:id="cinColumn" text="CIN" />
+                <TableColumn fx:id="addressColumn" text="Address" />
+                <TableColumn fx:id="phoneNumberColumn" text="Phone Number" />
+                <TableColumn fx:id="editColumn" prefWidth="50">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="button" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="deleteColumn" prefWidth="50">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="button" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+        <Button layoutX="500.0" layoutY="14.0" onAction="#openSupplierForm" styleClass="btn, btn-primary">
+            Ajouter un nouveau fournisseur
+        </Button>
+
+    <Button layoutX="508.0" layoutY="221.0" mnemonicParsing="false" onAction="#uploadData" prefHeight="25.0" prefWidth="115.0" text="Upload Excel" />
+
+
+</AnchorPane>
